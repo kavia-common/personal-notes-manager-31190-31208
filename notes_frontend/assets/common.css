@@ -1,0 +1,135 @@
+:root {
+/* Colors */
+  --color-252525: #252525;
+  --color-ff9e9e: #ff9e9e;
+  --color-000000: #000000;
+  --color-91f48f: #91f48f;
+  --color-fff599: #fff599;
+  --color-ffffff: #ffffff;
+  --color-3b3b3b: #3b3b3b;
+  --color-9effff: #9effff;
+  --color-b69cff: #b69cff;
+  --color-fd99ff: #fd99ff;
+  --color-ff0000: #ff0000;
+  --color-c4c4c4: #c4c4c4;
+  --color-cfcfcf: #cfcfcf;
+  --color-9a9a9a: #9a9a9a;
+  --color-263238: #263238;
+  --color-d4d6d7: #d4d6d7;
+  --color-7f8a8e: #7f8a8e;
+  --color-3b464c: #3b464c;
+  --color-4fb6b2: #4fb6b2;
+  --color-d0d0d0: #d0d0d0;
+  --color-606060: #606060;
+  --color-30be71: #30be71;
+  --color-cccccc: #cccccc;
+  --color-f4f5d5: #f4f5d5;
+
+/* Typography variables (family, size, weight, line-height, align, color when present) */
+  --typo-13-family: "Nunito", sans-serif;
+  --typo-13-size: 25px;
+  --typo-13-weight: 400;
+  --typo-13-line-height: 34.099998474121094px;
+  --typo-13-letter-spacing: 0px;
+  --typo-13-text-align: left;
+  --typo-13-color: var(--color-000000);
+
+  --typo-14-family: "Nunito", sans-serif;
+  --typo-14-size: 43px;
+  --typo-14-weight: 600;
+  --typo-14-line-height: 58.65199661254883px;
+  --typo-14-letter-spacing: 0px;
+  --typo-14-text-align: left;
+  --typo-14-color: var(--color-ffffff);
+
+/* Shadows */
+  --shadow-0: -5px 0px 10px 0 #000000;
+  --shadow-1: 0px 5px 10px 0 #000000;
+  --shadow-2: 45px -10px 80px 0 #000000;
+
+/* Styles (background, border, opacity) */
+  --style-0-background: var(--color-252525);
+  --style-0-border-radius: 30px;
+
+  --style-1-background: var(--color-ff9e9e);
+  --style-1-border-radius: 10px;
+
+  --style-2-background: var(--color-000000);
+
+  --style-3-background: var(--color-91f48f);
+  --style-3-border-radius: 10px;
+
+  --style-4-background: var(--color-fff599);
+  --style-4-border-radius: 10px;
+
+  --style-5-background: var(--color-ffffff);
+
+  --style-6-background: var(--color-3b3b3b);
+  --style-6-border-radius: 15px;
+
+  --style-7-background: var(--color-9effff);
+  --style-7-border-radius: 10px;
+
+  --style-8-background: var(--color-b69cff);
+  --style-8-border-radius: 10px;
+
+  --style-39-background: var(--color-252525);
+/* style_39 shadows: shadow_0 + shadow_1 */
+  --style-39-shadow-0: var(--shadow-0);
+  --style-39-shadow-1: var(--shadow-1);
+
+/* Spacing (common scales) */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+}
+
+/* Reset and shared rules */
+* { box-sizing: border-box; }
+html, body { margin:0; padding:0; }
+img { display:block; }
+
+.figma-screen {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--style-0-background);
+  border-radius: var(--style-0-border-radius);
+  margin: 0 auto;
+}
+
+.text-typo-13 {
+  font-family: var(--typo-13-family);
+  font-size: var(--typo-13-size);
+  font-weight: var(--typo-13-weight);
+  line-height: var(--typo-13-line-height);
+  letter-spacing: var(--typo-13-letter-spacing);
+  text-align: var(--typo-13-text-align);
+  color: var(--typo-13-color);
+}
+
+.text-typo-14 {
+  font-family: var(--typo-14-family);
+  font-size: var(--typo-14-size);
+  font-weight: var(--typo-14-weight);
+  line-height: var(--typo-14-line-height);
+  letter-spacing: var(--typo-14-letter-spacing);
+  text-align: var(--typo-14-text-align);
+  color: var(--typo-14-color);
+}
+
+/* Helpers for styled rectangles */
+.style-1 { background-color: var(--style-1-background); border-radius: var(--style-1-border-radius); }
+.style-3 { background-color: var(--style-3-background); border-radius: var(--style-3-border-radius); }
+.style-4 { background-color: var(--style-4-background); border-radius: var(--style-4-border-radius); }
+.style-6 { background-color: var(--style-6-background); border-radius: var(--style-6-border-radius); }
+.style-7 { background-color: var(--style-7-background); border-radius: var(--style-7-border-radius); }
+.style-8 { background-color: var(--style-8-background); border-radius: var(--style-8-border-radius); }
+
+/* Floating circular style (style_39) */
+.style-39 {
+  background-color: var(--style-39-background);
+  box-shadow: var(--style-39-shadow-0), var(--style-39-shadow-1);
+  border-radius: 50%;
+}

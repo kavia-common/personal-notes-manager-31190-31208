@@ -1,0 +1,54 @@
+/* Screen specific styles for Home Screen 125:171 */
+#home-screen-125-171 {
+  width: 414px;
+  height: 1100px;
+}
+
+#root-125-171 {
+  position: relative;
+  width: 414px;
+  height: 1100px;
+}
+
+/* Absolutely positioned elements relative to root (x_root = 1602, y_root = -823) */
+/* Order: use incremental z-index based on children order */
+.elem-125-175 { position:absolute; left:24px; top:143px; width:365px; height:157px; z-index:1; }
+.elem-125-176 { position:absolute; left:69px; top:168px; width:270px; height:103px; z-index:2; }
+.elem-125-177 { position:absolute; left:69px; top:190px; width:0px; height:32px; z-index:3; }
+.elem-125-178 { position:absolute; left:24px; top:323px; width:365px; height:123px; z-index:4; }
+.elem-125-179 { position:absolute; left:69px; top:352px; width:254px; height:64px; z-index:5; }
+.elem-125-180 { position:absolute; left:24px; top:471px; width:365px; height:110px; z-index:6; }
+.elem-125-181 { position:absolute; left:69px; top:494px; width:259px; height:67px; z-index:7; }
+.elem-125-186 { position:absolute; left:24px; top:47px; width:115px; height:59px; z-index:8; }
+.elem-125-187 { position:absolute; left:339px; top:51px; width:50px; height:50px; z-index:9; }
+.elem-125-188 { position:absolute; left:352px; top:64px; width:24px; height:24px; z-index:10; }
+.elem-125-189 { position:absolute; left:268px; top:51px; width:50px; height:50px; z-index:11; }
+.elem-125-190 { position:absolute; left:281px; top:64px; width:24px; height:24px; z-index:12; }
+.elem-136-37  { position:absolute; left:24px; top:606px; width:365px; height:120px; z-index:13; }
+.elem-136-38  { position:absolute; left:24px; top:751px; width:365px; height:100px; z-index:14; }
+.elem-136-39  { position:absolute; left:69px; top:632px; width:287px; height:68px; z-index:15; }
+.elem-136-40  { position:absolute; left:69px; top:768px; width:297px; height:66px; z-index:16; }
+.elem-125-191 { position:absolute; left:309px; top:777px; width:70px; height:70px; z-index:17; border-radius:50%; }
+.elem-125-192 { position:absolute; left:320px; top:788px; width:48px; height:48px; z-index:18; }
+
+/* Inner vectors within components are positioned relative to their component container */
+/* info_outline vector child */
+.elem-I125-188-8-9 { position:absolute; left:2px; top:2px; width:20px; height:20px; z-index:1; }
+/* search vector child */
+.elem-I125-190-8-12 { position:absolute; left:2.999px; top:2.999px; width:17.048px; height:17.058px; z-index:1; }
+/* add vector child */
+.elem-I125-192-115-19 { position:absolute; left:10px; top:10px; width:28px; height:28px; z-index:1; }
+
+/* Visual styles */
+.rect { background: transparent; }
+.button { cursor:pointer; transition: transform .15s ease, opacity .2s ease; }
+.button:hover { transform: translateY(-1px); opacity:.92; }
+.button:active { transform: translateY(0); opacity:1; }
+
+.icon-img { image-rendering: -webkit-optimize-contrast; }
+
+/* Containers to anchor inner icons absolutely */
+.component-container { position: absolute; }
+
+/* Accessibility focus */
+.button:focus { outline: 2px solid var(--color-9effff); outline-offset: 2px; }
