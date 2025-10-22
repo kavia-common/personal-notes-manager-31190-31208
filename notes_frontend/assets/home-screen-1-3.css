@@ -1,0 +1,103 @@
+#home-screen-1-3 {
+  width: 414px;
+  height: 1100px;
+}
+
+.root-container {
+  position: relative;
+  width: 414px;
+  height: 1100px;
+  overflow: hidden;
+}
+
+/* Base helpers */
+.rect { background: transparent; }
+.button { cursor: pointer; transition: transform .15s ease, opacity .2s ease; }
+.button:hover { transform: translateY(-1px); opacity: .92; }
+.button:active { transform: translateY(0); opacity: 1; }
+.icon-img { image-rendering: -webkit-optimize-contrast; display: block; }
+.container, .component-container, .group { position: absolute; }
+
+/* Root frame background follows common.css style_0, already applied on .figma-screen */
+
+/* COORDINATE SYSTEM:
+   Root frame at (x=459, y=-823).
+   Each child's left = child.x - 459; top = child.y - (-823) = child.y + 823.
+   All units in px. Z-index incremental by JSON order.
+*/
+
+/* 1) Frame 3 (125:138) at (483, -680) size (365x110) */
+.elem-125-138 { left: 24px; top: 143px; width: 365px; height: 110px; z-index: 1; }
+/* Rectangle 7 (29:1) at (483, -680) within Frame 3 -> relative to Frame 3 origin (483,-680) => (0,0) */
+.elem-29-1 { left: 0px; top: 0px; width: 365px; height: 110px; z-index: 1; border-radius: 10px; background-color: var(--color-fd99ff); }
+/* UI concepts worth exsisting (36:28) at (529, -658) -> relative to Frame 3 (483,-680) => (46, 22) */
+.elem-36-28 { left: 46px; top: 22px; width: 290px; height: 67px; z-index: 2; }
+
+/* 2) Rectangle 8 (29:2) at (483, -545), size (365x157) */
+.elem-29-2 { position: absolute; left: 24px; top: 278px; width: 365px; height: 157px; z-index: 2; border-radius: var(--style-1-border-radius); background-color: var(--style-1-background); }
+
+/* 3) Book Review text (36:31) at (528, -518), size (270x103) */
+.elem-36-31 { position: absolute; left: 69px; top: 305px; width: 270px; height: 103px; z-index: 3; }
+
+/* 4) Text spacer (54:4) at (528, -496), size (0x32) */
+.elem-54-4 { position: absolute; left: 69px; top: 327px; width: 0px; height: 32px; z-index: 4; }
+
+/* 5) Rectangle 11 (29:5) at (483, -363), size (365x123) */
+.elem-29-5 { position: absolute; left: 24px; top: 460px; width: 365px; height: 123px; z-index: 5; border-radius: var(--style-3-border-radius); background-color: var(--style-3-background); }
+
+/* 6) Animes produced by Ufotable (36:37) at (528, -334), size (254x64) */
+.elem-36-37 { position: absolute; left: 69px; top: 489px; width: 254px; height: 64px; z-index: 6; }
+
+/* 7) Rectangle 10 (29:4) at (483, -215), size (365x110) */
+.elem-29-4 { position: absolute; left: 24px; top: 608px; width: 365px; height: 110px; z-index: 7; border-radius: var(--style-4-border-radius); background-color: var(--style-4-background); }
+
+/* 8) Mangas planned to read (36:30) at (528, -192), size (259x67) */
+.elem-36-30 { position: absolute; left: 69px; top: 631px; width: 259px; height: 67px; z-index: 8; }
+
+/* 9) Rectangle 13 (29:7) at (483, -80), size (365x120) */
+.elem-29-7 { position: absolute; left: 24px; top: 743px; width: 365px; height: 120px; z-index: 9; border-radius: var(--style-7-border-radius); background-color: var(--style-7-background); }
+
+/* 10) Awesome tweets collection (36:34) at (528, -54), size (287x68) */
+.elem-36-34 { position: absolute; left: 69px; top: 769px; width: 287px; height: 68px; z-index: 10; }
+
+/* 11) Rectangle 9 (29:3) at (483, 65), size (365x100) */
+.elem-29-3 { position: absolute; left: 24px; top: 888px; width: 365px; height: 100px; z-index: 11; border-radius: var(--style-8-border-radius); background-color: var(--style-8-background); }
+
+/* 12) List of free & open source apps (36:29) at (528, 77), size (297x66) */
+.elem-36-29 { position: absolute; left: 69px; top: 900px; width: 297px; height: 66px; z-index: 12; }
+
+/* 13) Hero Text (125:41) at (483, -776), size (115x59) */
+.elem-125-41 { position: absolute; left: 24px; top: 47px; width: 115px; height: 59px; z-index: 13; }
+
+/* 14) Button 1 (125:42) at (798, -772), size (50x50) */
+.elem-125-42 { position: absolute; left: 339px; top: 51px; width: 50px; height: 50px; z-index: 14; border-radius: var(--style-6-border-radius); background-color: var(--style-6-background); }
+
+/* 15) info_outline (125:43) at (811, -759), size (24x24) */
+.elem-125-43 { position: absolute; left: 352px; top: 64px; width: 24px; height: 24px; z-index: 15; }
+/* Group (I125:43;8:7) fills the component bounds */
+.elem-I125-43-8-7 { left: 0px; top: 0px; width: 24px; height: 24px; }
+/* Visible Vector (I125:43;8:9) at (813, -757) relative to component (811,-759) => (2,2) size ~ (20x20) */
+.elem-I125-43-8-9 { position: absolute; left: 2px; top: 2px; width: 20px; height: 20px; z-index: 1; }
+
+/* 16) Button 4 (125:44) at (727, -772), size (50x50) */
+.elem-125-44 { position: absolute; left: 268px; top: 51px; width: 50px; height: 50px; z-index: 16; border-radius: var(--style-6-border-radius); background-color: var(--style-6-background); }
+
+/* 17) search (125:45) at (740, -759), size (24x24) */
+.elem-125-45 { position: absolute; left: 281px; top: 64px; width: 24px; height: 24px; z-index: 17; }
+/* Visible vector (I125:45;8:12) at (742.999, -756.001) relative to (740,-759) => (~3.0, 3.0) */
+.elem-I125-45-8-12 { position: absolute; left: 2.999px; top: 2.999px; width: 17.048px; height: 17.058px; z-index: 1; }
+
+/* 18) Ellipse 1 (17:2) at (768, -46), size (70x70) */
+.elem-17-2 { position: absolute; left: 309px; top: 777px; width: 70px; height: 70px; z-index: 18; border-radius: 50%; background-color: var(--style-39-background); box-shadow: var(--style-39-shadow-0), var(--style-39-shadow-1); }
+
+/* 19) add (115:20) at (779, -35), size (48x48) */
+.elem-115-20 { position: absolute; left: 320px; top: 788px; width: 48px; height: 48px; z-index: 19; }
+/* visible vector (I115:20;115:19) at (789,-25) relative to component (779,-35) => (10,10) size (28x28) */
+.elem-I115-20-115-19 { position: absolute; left: 10px; top: 10px; width: 28px; height: 28px; z-index: 1; }
+
+/* Typography mappings to tokens already in common.css:
+   .text-typo-13 and .text-typo-14 classes apply all font and color properties
+*/
+
+/* Accessibility focus */
+.button:focus { outline: 2px solid var(--color-9effff); outline-offset: 2px; }
